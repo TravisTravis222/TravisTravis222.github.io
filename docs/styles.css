@@ -2,7 +2,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
 }
 body {
   background-image: url("images/background.jpg");
@@ -11,4 +10,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
+}
+.not-pc {display: none}
+@media (max-width: 768px) {
+  .not-pc {display: contents}
+  .pc {display:none}
 }
